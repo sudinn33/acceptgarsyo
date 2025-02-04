@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Proposal</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: pink;
+            padding-top: 200px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        #yes {
+            font-size: 40px;
+            padding: 20px;
+            margin: auto;
+            cursor: pointer;
+            border: solid white 3px;
+            border-radius: 15px;
+            background-color: #da4949;
+            color: white;
+        }
+        #no {
+            font-size: 20px;
+            padding: 10px;
+            margin: auto;
+            border-radius: 5px;
+            border: solid black 2px;
+            position: absolute;
+            
+        }
+     
+    </style>
+</head>
+<body>
+    
+    <div>
+        <img  src="pic.gif" height="100px" width="140px"
+    </div>
+    <div class="container">
+        <h2>WILL YOU BE MY VALENTINE KAAAALIIIII? 💖</h2>
+        <div class="buttons">
+            <button id="yes" >Yessss, Babeee</button>
+            <button id="no" onmouseover="moveButton()">No</button>
+           
+        </div>
+    </div>
+
+    <script>
+        function moveButton() {
+            let noButton = document.getElementById("no");
+            let x = Math.random() * (window.innerWidth - noButton.clientWidth);
+            let y = Math.random() * (window.innerHeight - noButton.clientHeight);
+            noButton.style.left = `${x}px`;
+            noButton.style.top = `${y}px`;
+        }
+    </script>
+</script>
+<script>
+    document.getElementById("yes").addEventListener("click", function() {
+        window.location.href = "https://www.youtube.com/watch?v=NSU2hJ5wT08"; 
+    });
+
+    function moveButton() {
+        let noButton = document.getElementById("no");
+        let x = Math.random() * (window.innerWidth - noButton.clientWidth);
+        let y = Math.random() * (window.innerHeight - noButton.clientHeight);
+        noButton.style.left = `${x}px`;
+        noButton.style.top = `${y}px`;
+    }
+</script>
+</body>
+</html>
